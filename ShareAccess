@@ -1,0 +1,15 @@
+
+$input = Read-Host "Please provied the Shared file Name"
+try
+{
+    Get-SmbShareAccess -Name $input -ErrorAction Stop
+}
+catch
+{
+    Write-Output "The given share is not available in the system"
+}
+ 
+
+
+
+
