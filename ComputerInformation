@@ -1,0 +1,2 @@
+$input = read-host "Please provide the computer porperty name"
+get-computerinfo | select $input
