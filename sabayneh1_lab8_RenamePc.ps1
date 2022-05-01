@@ -6,7 +6,7 @@
 .DESCRIPTION 
    This function renames the Windows server from the user either by parameter or manual input
    Make certain to first dot-source before calling this function by issuing:
-   . . \fusai_Lab8_RenamePC.ps1   # use YOUR SenecaID
+   . . \sabayneh1_Lab8_RenamePC.ps1   # use YOUR SenecaID
 
 .PARAMETER PCName
    Specifies the Name of the Windows server to be changed to
@@ -19,7 +19,7 @@ New-PCName
 Enter new PC Name: [newServerName]
 
 .NOTES 
-Author: samaner Abayneh
+Author: samander Abayneh
 DateLastModified: 3/25/2019
 #>     
 #function to change pcname 
