@@ -1,0 +1,16 @@
+$menu = Read-host "chose from this menu 1. DomainName  2. Coumputer Name 3. Server Edition 4. IPv4 address 5. Drives 6.Storage pool 7.Virtual Disk 8.Niagara  Shares 9.Local Users"
+
+switch($menu){
+
+"1" {Get-wmiobject -Namespace root\cimv2 -class win32_computerSystem | select-object name, domain}
+"2" {$env:computername}
+"3" {[System.environment]::osversion.version}
+"4" {Get-Netipaddress -addressfamily IPv4 | select-object Ipaddress}
+"5" {Get-psdrive -Psprovider Filesystem}
+"6" {get-storagepool}
+"7" {get-virtualdisk}
+"8" {get-wmiobject -class win32_share}
+"9" {get-wmiobject -class win32_useraccount}
+default {write-output "ERROR, please chose from the options given"}
+
+
