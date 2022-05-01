@@ -1,0 +1,14 @@
+$n1 =Read-Host "Enter the first number"
+$n2 =Read-Host "Enter the second number"
+
+
+$s = [int] $n1 + [int]$n2
+$D = [int] $n1 - [int]$n2
+$m = [int] $n1 * [int]$n2
+$di = [int] $n1 / [int]$n2
+
+write-output "Sum of  $n1 and $n2 is $s"
+write-output "difference of  $n1 and $n2 is $d"
+write-output "multipleication of  $n1 and $n2 is $m"
+write-output "division of  $n1 and $n2 is $di 
+
